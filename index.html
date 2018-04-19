@@ -25,13 +25,16 @@
     <meta name="msapplication-square310x310logo" content="/largetile.png" />
     <!--Loading Font Awesome-->
     <script defer src='https://use.fontawesome.com/releases/v5.0.9/js/all.js' integrity='sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl' crossorigin='anonymous'></script>
+    <!--Loading google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600|Raleway:100,400,500,600,700,800,900"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div class="wrapper">
-        <!--header-->
-        <header id="main-header" class="main-header">
-            <!--navbar-->
+    <!--header-->
+    <header id="main-header" class="main-header">
+        <!--navbar-->
+        <div class="wrapper">
             <nav class="nav">
                 <ul class="nav__list txt--uppercase">
                     <li><a href="#main-header" class="nav__list__list-item__link"><img src="images/logo.png" alt="Lisbon Logo"></a></li>
@@ -45,9 +48,11 @@
                     <li><a href="#" class="nav__list__list-item__link">Contact Us</a></li>
                     <li><a href="#" class="nav__list__list-item__link"><i class="fas fa-search"></i></a></li>
                 </ul>
-            </nav><!--nav end-->
+            </nav>
+        </div><!--nav end-->
 
-            <!-- hero -->
+        <!-- hero -->
+        <div class="wrapper">
             <div class="main-header__hero">
                 <div class="main-header__hero__call-to-action">
                     <img src="images/mic-icon.png" alt="mic icon">
@@ -57,11 +62,13 @@
                 </div>
                 <a href="#"><i class="fas fa-angle-left main-header__hero__left-arrow"></i></a>
                 <a href="#"><i class="fas fa-angle-right main-header__hero__right-arrow"></i></a>
-            </div><!--hero end-->
-        </header><!--header end-->
+            </div>
+        </div><!--hero end-->
+    </header><!--header end-->
 
-        <!--conference date-->
-        <section class="date txt--uppercase">
+    <!--conference date-->
+    <section class="date txt--uppercase">
+        <div class="wrapper">
             <p class="date__subtitle">26-29 August 2017, Berlin</p>
             <h3 class="date__title">International Conference in 2017</h3>
             <div class="date__counter">
@@ -88,10 +95,12 @@
                 <a class="btn btn--primary txt--uppercase" href="#">Buy Tickets</a>
                 <a class="btn btn--secondary txt--uppercase" href="#">See Details</a>
             </div>
-        </section><!--conference date end-->
+        </div>
+    </section><!--conference date end-->
 
-        <!--about-->
-        <section class="about theme--light">
+    <!--about-->
+    <section class="about theme--light">
+        <div class="wrapper">
             <h2 class="section__title txt--uppercase">About this event</h2>
             <p class="section__sub-title">Start your own IT business and picking the right niche in less than 30 days</p>
             <div class="about__article">
@@ -114,20 +123,24 @@
                     <a href="#">Read More</a>
                 </article>
             </div>
-        </section><!--about end-->
+        </div>
+    </section><!--about end-->
 
-        <!--join-->
-        <section class="join theme--dark">
+    <!--join-->
+    <section class="join theme--dark">
+        <div class="wrapper">
             <h2 class="section__title txt--uppercase">Join our event</h2>
             <p class="section__sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus corporis fugit odio modi officiis cupiditate aut, expedita velit non?</p>
             <form action="">
                 <input type="text" name="email" placeholder="Your Email...">
                 <input class="btn btn--primary btn--attached txt--uppercase" type="submit" value="Subscribe">
             </form>
-        </section><!--join end-->
+        </div>
+    </section><!--join end-->
 
-        <!--speakers-->
-        <section class="speakers">
+    <!--speakers-->
+    <section class="speakers theme--light">
+        <div class="wrapper">
             <h2 class="section__title txt--uppercase">Our Event Speakers</h2>
             <p class="section__sub-title">Start your own IT business and picking the right niche in less than 30 days</p>
 
@@ -167,13 +180,15 @@
                 <div class=""></div>
                 <div class=""></div>
             </div>
-        </section><!--speakers end-->
+        </div>
+    </section><!--speakers end-->
 
-        <!--pricing-->
-        <section class="pricing">
-            <h2 class="section__title txt--uppercase">Our Pricing</h2>
-            <p class="section__sub-title">Start your own IT business and picking the right niche in less than 30 days</p>
-            <div class="pricing__container">
+    <!--pricing-->
+    <section class="pricing theme--dark">
+        <h2 class="section__title txt--uppercase">Our Pricing</h2>
+        <p class="section__sub-title">Start your own IT business and picking the right niche in less than 30 days</p>
+        <div class="pricing__container">
+            <div class="wrapper">
                 <div class="pricing__container__price">
                     <h3>Basic Plan</h3>
                     <p>Standard Pricing Plan</p>
@@ -209,10 +224,12 @@
                     <a class="btn btn--primary txt--uppercase" href="#">See Details</a>
                 </div>
             </div>
-        </section><!--pricing end-->
+        </div>
+    </section><!--pricing end-->
 
-        <!--event-->
-        <section class="event">
+    <!--event-->
+    <section class="event theme--light">
+        <div class="wrapper">
             <h2 class="section__title txt--uppercase">Our Pricing</h2>
             <p class="section__sub-title">Start your own IT business and picking the right niche in less than 30 days</p>
 
@@ -256,10 +273,12 @@
                         repellat commodi!</p>
                 </div>
             </div>
-        </section><!--event end-->
+        </div>
+    </section><!--event end-->
 
-        <!--quote end-->
-        <section class="quote">
+    <!--quote end-->
+    <section class="quote">
+        <div class="wrapper">
             <aside class="quote__pictures">
                 <img src="images/quote-1.png" alt="image of some girl">
                 <img src="images/quote-2.png" alt="image of some guy">
@@ -272,15 +291,16 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae eius nemo fuga natus dolores ex ducimus repudiandae consectetur ipsa aliquam atque iure, molestias saepe expedita! Laborum aliquam hic est, illum, earum quia sunt maiores quis impedit id possimus culpa autem!</p>
                 <p><span class="quote__text--name">Ashley Warner</span> - Artist</p>
             </div>
-        </section><!--quote end-->
+        </div>
+    </section><!--quote end-->
+    
+    <!--news-->
+    <section class="news">  
+        <div class="wrapper">          
             <h2 class="section__title txt--uppercase">Latest News</h2>
             <p class="section__sub-title">Start your own IT business and picking the right niche in less than 30 days</p>
-
-        <!--news-->
-        <section class="news">
-            
-        </section>
-    </div><!--wrapper end-->
+        </div>
+    </section>
 
     <!--Loading jQuery-->
     <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous'></script>
