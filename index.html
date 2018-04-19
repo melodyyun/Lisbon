@@ -5,9 +5,284 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Melody Project 2</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favi-logo/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favi-logo/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favi-logo/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favi-logo/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favi-logo/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favi-logo/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favi-logo/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favi-logo/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favi-logo/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../images/favi-logo/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../images/favi-logo/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../images/favi-logo/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../images/favi-logo/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="/largetile.png" />
+    <!--Loading Font Awesome-->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.9/js/all.js' integrity='sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h1>hi</h1>
+    <div class="wrapper">
+        <!--header-->
+        <header id="main-header" class="main-header">
+            <!--navbar-->
+            <nav class="nav">
+                <ul class="nav__list txt--uppercase">
+                    <li><a href="#main-header" class="nav__list__list-item__link"><img src="images/logo.png" alt="Lisbon Logo"></a></li>
+                    <li><a href="#" class="nav__list__list-item__link">Home</a></li>
+                    <li><a href="#" class="nav__list__list-item__link">About Us</a></li>
+                    <li><a href="#" class="nav__list__list-item__link">Speakers</a></li>
+                    <li><a href="#" class="nav__list__list-item__link">Pages</a></li>
+                    <li><a href="#" class="nav__list__list-item__link">Sponsors</a></li>
+                    <li><a href="#" class="nav__list__list-item__link">Blog</a></li>
+                    <li><a href="#" class="nav__list__list-item__link">Venues</a></li>
+                    <li><a href="#" class="nav__list__list-item__link">Contact Us</a></li>
+                    <li><a href="#" class="nav__list__list-item__link"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </nav><!--nav end-->
+
+            <!-- hero -->
+            <div class="main-header__hero">
+                <div class="main-header__hero__call-to-action">
+                    <img src="images/mic-icon.png" alt="mic icon">
+                    <p class="main-header__hero__call-to-action--date txt-lowercase">20 - 22 June,2018,Newyork City</p>
+                    <h1 class="txt--uppercase">World Digital Conference 2018 <br> Lead to your Career</h1>
+                    <a class="btn btn--primary txt--uppercase" href="#">Buy Tickets</a>
+                </div>
+                <a href="#"><i class="fas fa-angle-left main-header__hero__left-arrow"></i></a>
+                <a href="#"><i class="fas fa-angle-right main-header__hero__right-arrow"></i></a>
+            </div><!--hero end-->
+        </header><!--header end-->
+
+        <!--conference date-->
+        <section class="date txt--uppercase">
+            <p class="date__subtitle">26-29 August 2017, Berlin</p>
+            <h3 class="date__title">International Conference in 2017</h3>
+            <div class="date__counter">
+                <ul class="date__counter__date">
+                    <li>1</li>
+                    <li>4</li>
+                    <li>8</li>
+                    <p>:</p>
+                    <li>2</li>
+                    <li>5</li>
+                    <p>:</p>
+                    <li>2</li>
+                    <li>8</li>
+                    <p>:</p>
+                    <li>1</li>
+                    <li>5</li>
+                </ul>
+                <ul>
+                    <li>Days</li>
+                    <li>Hours</li>
+                    <li>Minutes</li>
+                    <li>Seconds</li>
+                </ul>
+                <a class="btn btn--primary txt--uppercase" href="#">Buy Tickets</a>
+                <a class="btn btn--secondary txt--uppercase" href="#">See Details</a>
+            </div>
+        </section><!--conference date end-->
+
+        <!--about-->
+        <section class="about theme--light">
+            <h2 class="section__title txt--uppercase">About this event</h2>
+            <p class="section__sub-title">Start your own IT business and picking the right niche in less than 30 days</p>
+            <div class="about__article">
+                <article>
+                    <img src="images/about-image-1.png" alt="camera recording at a club with lasers in the background">
+                    <h3 class="about__article__title txt--uppercase">Why we do this</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quam voluptas corrupti autem, blanditiis maxime.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article>
+                    <img src="images/about-image-2.png" alt="people dancing at a club">
+                    <h3 class="about__article__title txt--uppercase">What you will learn</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quam voluptas corrupti autem, blanditiis maxime.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article>
+                    <img src="images/about-image-3.png" alt="macbook laptop keyboard with colorful lights shinning on it">
+                    <h3 class="about__article__title txt--uppercase">What are the benefits</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quam voluptas corrupti autem, blanditiis maxime.</p>
+                    <a href="#">Read More</a>
+                </article>
+            </div>
+        </section><!--about end-->
+
+        <!--join-->
+        <section class="join theme--dark">
+            <h2 class="section__title txt--uppercase">Join our event</h2>
+            <p class="section__sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus corporis fugit odio modi officiis cupiditate aut, expedita velit non?</p>
+            <form action="">
+                <input type="text" name="email" placeholder="Your Email...">
+                <input class="btn btn--primary btn--attached txt--uppercase" type="submit" value="Subscribe">
+            </form>
+        </section><!--join end-->
+
+        <!--speakers-->
+        <section class="speakers">
+            <h2 class="section__title txt--uppercase">Our Event Speakers</h2>
+            <p class="section__sub-title">Start your own IT business and picking the right niche in less than 30 days</p>
+
+            <div class="speakers__container">
+                <figure>
+                    <img src="images/speaker-1.png" alt="Photo of Ashley Warner">
+                    <figcaption>
+                        <h4>Ashley Warner</h4>
+                        <p>CEO, Hatem Co.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/speaker-2.png" alt="Photo of Seth Rollins">
+                    <figcaption>
+                        <h4>Seth Rollins</h4>
+                        <p>GM, The boxtrap.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/speaker-3.png" alt="Photo of Darcy Owens">
+                    <figcaption>
+                        <h4>Darcy Owens</h4>
+                        <p>Producer, CSI:Cyber</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/speaker-4.png" alt="Photo of Adam Rose">
+                    <figcaption>
+                        <h4>Adam Rose</h4>
+                        <p>CEO, CCO Bittorrent</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="speaker__page-scroll">
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+            </div>
+        </section><!--speakers end-->
+
+        <!--pricing-->
+        <section class="pricing">
+            <h2 class="section__title txt--uppercase">Our Pricing</h2>
+            <p class="section__sub-title">Start your own IT business and picking the right niche in less than 30 days</p>
+            <div class="pricing__container">
+                <div class="pricing__container__price">
+                    <h3>Basic Plan</h3>
+                    <p>Standard Pricing Plan</p>
+                    <p><span class="pricing__container__price--$">$</span><span class="pricing__container__price--price">35</span>/monthly</p>
+                    <p>Clients support 3 Event</p>
+                    <p>Regular seat accomodation</p>
+                    <p>Free coffee and lunch</p>
+                    <p>Free entrance material</p>
+                    <a class="btn btn--primary txt--uppercase" href="#">See Details</a>
+                </div>
+                <div class="pricing__container__price">
+                    <h3>Optimal plan</h3>
+                    <p>Standard Pricing Plan</p>
+                    <p>
+                        <span class="pricing__container__price--$">$</span>
+                        <span class="pricing__container__price--price">60</span>/monthly</p>
+                    <p>Clients support 3 Event</p>
+                    <p>Regular seat accomodation</p>
+                    <p>Free coffee and lunch</p>
+                    <p>Free entrance material</p>
+                    <a class="btn btn--primary txt--uppercase" href="#">See Details</a>
+                </div>
+                <div class="pricing__container__price">
+                    <h3>Premium Plan</h3>
+                    <p>Standard Pricing Plan</p>
+                    <p>
+                        <span class="pricing__container__price--$">$</span>
+                        <span class="pricing__container__price--price">90</span>/monthly</p>
+                    <p>Clients support 3 Event</p>
+                    <p>Regular seat accomodation</p>
+                    <p>Free coffee and lunch</p>
+                    <p>Free entrance material</p>
+                    <a class="btn btn--primary txt--uppercase" href="#">See Details</a>
+                </div>
+            </div>
+        </section><!--pricing end-->
+
+        <!--event-->
+        <section class="event">
+            <h2 class="section__title txt--uppercase">Our Pricing</h2>
+            <p class="section__sub-title">Start your own IT business and picking the right niche in less than 30 days</p>
+
+            <aside class="event__schedule">
+                <div>
+                    <p>April 21</p>
+                    <p class="event__schedule--bolded">First Day</p>
+                </div>
+                <div>
+                    <p>April 22</p>
+                    <p class="event__schedule--bolded">Second Day</p>
+                </div>
+                <div>
+                    <p>April 23</p>
+                    <p class="event__schedule--bolded">Third Day</p>
+                </div>
+                <div>
+                    <p>April 24</p>
+                    <p class="event__schedule--bolded">Fourth Day</p>
+                </div>
+            </aside>
+            <div class="event__speaker">
+                <div class="event__speaker__topic">
+                    <p class="name">Ashley Warner</p>
+                    <p class="time">10AM - 12PM</p>
+                    <h4 class="title">Interface Holistic Lorem, ipsum dolor.</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic pariatur a odit sequi aperiam, ipsa aspernatur quaerat totam repellat commodi!</p>
+                </div>
+                <div class="event__speaker__topic">
+                    <p class="name">Ashley Warner</p>
+                    <p class="time">10AM - 12PM</p>
+                    <h4 class="title">Interface Holistic Lorem, ipsum dolor.</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic pariatur a odit sequi aperiam, ipsa aspernatur quaerat totam
+                        repellat commodi!</p>
+                </div>
+                <div class="event__speaker__topic">
+                    <p class="name">Ashley Warner</p>
+                    <p class="time">10AM - 12PM</p>
+                    <h4 class="title">Interface Holistic Lorem, ipsum dolor.</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic pariatur a odit sequi aperiam, ipsa aspernatur quaerat totam
+                        repellat commodi!</p>
+                </div>
+            </div>
+        </section><!--event end-->
+
+        <!--quote end-->
+        <section class="quote">
+            <aside class="quote__pictures">
+                <img src="images/quote-1.png" alt="image of some girl">
+                <img src="images/quote-2.png" alt="image of some guy">
+                <img src="images/quote-3.png" alt="image of some girl">
+                <img src="images/quote-4.png" alt="image of some guy">
+            </aside>
+            <div class="quote__text">
+                <p class="quote__text--smart">“</p>   
+                <h3 class="quote__text--title">Incase if you needed something fun and pointless</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae eius nemo fuga natus dolores ex ducimus repudiandae consectetur ipsa aliquam atque iure, molestias saepe expedita! Laborum aliquam hic est, illum, earum quia sunt maiores quis impedit id possimus culpa autem!</p>
+                <p><span class="quote__text--name">Ashley Warner</span> - Artist</p>
+            </div>
+        </section><!--quote end-->
+            <h2 class="section__title txt--uppercase">Latest News</h2>
+            <p class="section__sub-title">Start your own IT business and picking the right niche in less than 30 days</p>
+
+        <!--news-->
+        <section class="news">
+            
+        </section>
+    </div><!--wrapper end-->
+
+    <!--Loading jQuery-->
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous'></script>
 </body>
 </html>
