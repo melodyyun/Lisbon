@@ -132,17 +132,22 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
 p {
   font-family: 'Poppins', sans-serif;
   color: #777777;
-  font-size: 14px;
+  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 26px;
-  text-align: left; }
+  line-height: 26px; }
 
 .section__title {
   font-family: 'Raleway', sans-serif;
   font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 800;
   line-height: 26px;
   text-align: center; }
@@ -150,6 +155,7 @@ p {
 .section__subtitle {
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
+  font-size: 1.7rem;
   font-style: italic;
   line-height: 26px;
   text-align: center; }
@@ -160,8 +166,220 @@ p {
 .txt-lowercase {
   text-transform: lowercase; }
 
+html {
+  font-size: 62.5%; }
+
 .theme--dark {
   color: #222222; }
 
 .theme--light {
   color: #FFF; }
+
+.wrapper {
+  max-width: 61%;
+  margin: 0 auto; }
+
+.btn {
+  display: inline-block;
+  color: #FFF;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  border-radius: 5px; }
+
+.btn--primary {
+  background: #e85889; }
+
+.btn--secondary {
+  background: #463f8c; }
+
+@media (max-width: 1500px) {
+  .wrapper {
+    max-width: 80%; } }
+
+@media (max-width: 1100px) {
+  .wrapper {
+    max-width: 90%; } }
+
+.main-header {
+  background-image: url(../images/main-image.png);
+  height: 550px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .main-header__hero {
+    text-align: center;
+    padding: 6rem 0rem;
+    color: #FFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .main-header__hero p {
+      color: #FFF; }
+    .main-header__hero__call-to-action--date {
+      font-family: Poppins;
+      font-size: 2.2rem;
+      font-style: italic;
+      line-height: 2.6rem; }
+    .main-header__hero h1 {
+      font-family: Raleway;
+      font-size: 4.4rem;
+      font-weight: 800;
+      line-height: 5rem;
+      max-width: 700px; }
+  .main-header__hero__call-to-action__scroll {
+    background-color: rgba(255, 255, 255, 0.22);
+    color: #FFF;
+    font-size: 1.5rem;
+    text-decoration: none;
+    height: 60px;
+    padding: 0 0.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .main-header__hero__call-to-action__scroll--left {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+  .main-header__hero__call-to-action {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .main-header__hero__call-to-action__scroll--right {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3; }
+
+@media (max-width: 510px) {
+  .main-header {
+    height: 600px; }
+  .main-header__hero {
+    padding: 1rem; } }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.22);
+  font-size: 1.6rem; }
+  .nav img {
+    max-width: 100px; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase; }
+  .nav__list li {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 1rem 1rem; }
+    .nav__list li a {
+      color: #FFF;
+      text-decoration: none; }
+  .nav__list .nav__list__item--pinkBG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #e85889;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: #FFF; }
+
+.date {
+  background-color: #fafafa; }
+  .date__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 6rem; }
+  .date .date__subtitle {
+    font-family: Poppins;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 0; }
+  .date .date__title {
+    font-family: Raleway;
+    color: #222222;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 3.3rem;
+    margin: 0;
+    max-width: 250px; }
+  .date__container__counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap; }
+    .date__container__counter p {
+      margin: 0; }
+    .date__container__counter span {
+      font-family: Poppins;
+      background: #333333;
+      border-radius: 0.2rem;
+      color: #FFF;
+      width: 3.7rem;
+      height: 4.5rem;
+      display: inline-block;
+      line-height: 4.5rem;
+      text-align: center;
+      margin-right: 1px; }
+    .date__container__counter .colon {
+      line-height: 6rem;
+      margin: 0.7rem; }
+    .date__container__counter__container__counter__cell:nth-child(2) {
+      font-family: Raleway;
+      line-height: 2.6rem;
+      text-align: left; }
+  .date__container__btn .btn {
+    margin-left: 1rem; }

@@ -1,9 +1,12 @@
 // color variables
 
 $white: #FFF;
+$offWhite: #fafafa;
+$transparentWhite: rgba(255, 255, 255, 0.22);
 $primary: #463f8c;
 $secondary: #e85889;
 $black: #222222;
+$black2:#333333;
 $greyP: #777777;
 $greyPLight: #ababab;
 
@@ -13,3 +16,17 @@ $footerBlackMid: #1b1b1b;
 $footerBlackDark: #100f0f;
 
 $eventImgBorder: rgb(255, 242, 242);
+
+
+//mixin
+
+@mixin body($bodyFont, $brandColour){
+    font-family: $bodyFont;
+    color: $brandColour;
+    @include fontSize(16);
+}
+
+@mixin fontSizer($scale) {
+    font-size: $scale * 1px;
+    font-size: ($scale / 10) * 1rem;
+}

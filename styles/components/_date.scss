@@ -1,0 +1,66 @@
+.date{
+    background-color: $offWhite;
+    &__container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 6rem;
+    }
+
+    .date__subtitle{
+        font-family: Poppins;
+        color:  $greyP;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 26px;
+        margin: 0;
+    }
+
+    .date__title{
+        font-family: Raleway;
+        color:  $black;
+        font-size: 2.6rem;
+        font-weight: 700;
+        line-height: 3.3rem;
+        margin: 0;
+        max-width: 250px;
+    }
+
+    &__container__counter{
+        display: flex;
+        flex-flow: row wrap;
+        p{
+            margin: 0;
+        }
+        span{
+            font-family: Poppins;
+            background:$black2;
+            border-radius: 0.2rem;
+            color: $white;
+            width: 3.7rem;
+            height: 4.5rem;
+            display:inline-block;
+            line-height: 4.5rem;
+            text-align: center;
+            margin-right: 1px;
+        }
+        .colon{
+            line-height: 6rem;
+            margin: 0.7rem;
+        }
+        &__container__counter__cell:nth-child(2){
+            font-family: Raleway;
+            line-height: 2.6rem;
+            text-align: left;
+        }
+
+    }
+    &__container__btn{
+        .btn{
+            margin-left: 1rem;
+        }
+    }
+
+}
+

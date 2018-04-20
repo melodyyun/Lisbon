@@ -36,17 +36,19 @@
         <!--navbar-->
         <div class="wrapper">
             <nav class="nav">
+                <a href="#main-header" class="nav__list__list-item__link">
+                    <img src="images/logo.png" alt="Lisbon Logo">
+                </a>
                 <ul class="nav__list txt--uppercase">
-                    <li><a href="#main-header" class="nav__list__list-item__link"><img src="images/logo.png" alt="Lisbon Logo"></a></li>
-                    <li><a href="#" class="nav__list__list-item__link">Home</a></li>
-                    <li><a href="#" class="nav__list__list-item__link">About Us</a></li>
-                    <li><a href="#" class="nav__list__list-item__link">Speakers</a></li>
-                    <li><a href="#" class="nav__list__list-item__link">Pages</a></li>
-                    <li><a href="#" class="nav__list__list-item__link">Sponsors</a></li>
-                    <li><a href="#" class="nav__list__list-item__link">Blog</a></li>
-                    <li><a href="#" class="nav__list__list-item__link">Venues</a></li>
-                    <li><a href="#" class="nav__list__list-item__link">Contact Us</a></li>
-                    <li><a href="#" class="nav__list__list-item__link"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Sponsors</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Venues</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li class="nav__list__item--pinkBG"><i class="fas fa-search"></i></li>
                 </ul>
             </nav>
         </div><!--nav end-->
@@ -56,42 +58,45 @@
             <div class="main-header__hero">
                 <div class="main-header__hero__call-to-action">
                     <img src="images/mic-icon.png" alt="mic icon">
-                    <p class="main-header__hero__call-to-action--date txt-lowercase">20 - 22 June,2018,Newyork City</p>
-                    <h1 class="txt--uppercase">World Digital Conference 2018 <br> Lead to your Career</h1>
+                    <p class="main-header__hero__call-to-action--date">20 - 22 June, 2018, Newyork City</p>
+                    <h1 class="txt--uppercase">World Digital Conference 2018 Lead to your Career</h1>
                     <a class="btn btn--primary txt--uppercase" href="#">Buy Tickets</a>
                 </div>
-                <a href="#"><i class="fas fa-angle-left main-header__hero__left-arrow"></i></a>
-                <a href="#"><i class="fas fa-angle-right main-header__hero__right-arrow"></i></a>
+                <a class="main-header__hero__call-to-action__scroll main-header__hero__call-to-action__scroll--left"href="#"><i class="fas fa-angle-left main-header__hero__left-arrow"></i></a>
+                <a class="main-header__hero__call-to-action__scroll main-header__hero__call-to-action__scroll--right"href="#"><i class="fas fa-angle-right main-header__hero__right-arrow"></i></a>
             </div>
         </div><!--hero end-->
     </header><!--header end-->
 
     <!--conference date-->
     <section class="date txt--uppercase">
-        <div class="wrapper">
-            <p class="date__subtitle">26-29 August 2017, Berlin</p>
-            <h3 class="date__title">International Conference in 2017</h3>
-            <div class="date__counter">
-                <ul class="date__counter__date">
-                    <li>1</li>
-                    <li>4</li>
-                    <li>8</li>
-                    <p>:</p>
-                    <li>2</li>
-                    <li>5</li>
-                    <p>:</p>
-                    <li>2</li>
-                    <li>8</li>
-                    <p>:</p>
-                    <li>1</li>
-                    <li>5</li>
-                </ul>
-                <ul>
-                    <li>Days</li>
-                    <li>Hours</li>
-                    <li>Minutes</li>
-                    <li>Seconds</li>
-                </ul>
+        <div class="wrapper date__container">
+            <div class="date__container__text">
+                <p class="date__subtitle">26-29 August 2017, Berlin</p>
+                <h3 class="date__title">International Conference in 2017</h3>
+            </div>
+            <div class="date__container__counter">
+                <div class="date__container__counter__cell">
+                    <p><span>1</span><span>4</span><span>8</span></p>
+                    <p>Days</p>
+                </div>
+                    <p class="colon">:</p>
+                <div class="date__container__counter__cell">
+                    <p><span>2</span><span>5</span></p>
+                    <p>Hours</p>
+                </div>
+                    <p class="colon">:</p>
+                <div class="date__container__counter__cell">
+                    <p><span>2</span><span>8</span></p>
+                    <p>Minutes</p>
+                </div>
+                    <p class="colon">:</p>
+                <div class="date__container__counter__cell">
+                    <p><span>1</span><span>5</span></p>
+                    <p>Seconds</p>
+                </div>
+            </div>
+            <div class="date__container__btn">
                 <a class="btn btn--primary txt--uppercase" href="#">Buy Tickets</a>
                 <a class="btn btn--secondary txt--uppercase" href="#">See Details</a>
             </div>
