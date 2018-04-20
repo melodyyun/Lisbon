@@ -1,11 +1,13 @@
 .date{
     background-color: $offWhite;
+
     &__container{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: flex-start;
         padding: 6rem;
+        margin-top: 0.5rem;
     }
 
     .date__subtitle{
@@ -25,11 +27,13 @@
         line-height: 3.3rem;
         margin: 0;
         max-width: 250px;
+        margin-top: 0.5rem;
     }
 
     &__container__counter{
         display: flex;
         flex-flow: row wrap;
+        margin-top: 0.5rem;
         p{
             margin: 0;
         }
@@ -57,10 +61,19 @@
 
     }
     &__container__btn{
+        margin-top: 0.5rem;
         .btn{
             margin-left: 1rem;
         }
     }
+}
 
+@media (max-width:1400px){
+    .date__container__btn{
+        .btn{
+            margin-left: 0;
+            margin-top: 0.5rem;
+        }
+    }
 }
 

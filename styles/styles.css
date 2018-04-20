@@ -150,7 +150,8 @@ p {
   font-size: 3.6rem;
   font-weight: 800;
   line-height: 26px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 10rem; }
 
 .section__subtitle {
   font-family: 'Poppins', sans-serif;
@@ -170,10 +171,10 @@ html {
   font-size: 62.5%; }
 
 .theme--dark {
-  color: #222222; }
+  color: #FFF; }
 
 .theme--light {
-  color: #FFF; }
+  color: #222222; }
 
 .wrapper {
   max-width: 61%;
@@ -337,7 +338,8 @@ html {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding: 6rem; }
+    padding: 6rem;
+    margin-top: 0.5rem; }
   .date .date__subtitle {
     font-family: Poppins;
     color: #777777;
@@ -352,7 +354,8 @@ html {
     font-weight: 700;
     line-height: 3.3rem;
     margin: 0;
-    max-width: 250px; }
+    max-width: 250px;
+    margin-top: 0.5rem; }
   .date__container__counter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -360,7 +363,8 @@ html {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    margin-top: 0.5rem; }
     .date__container__counter p {
       margin: 0; }
     .date__container__counter span {
@@ -381,5 +385,12 @@ html {
       font-family: Raleway;
       line-height: 2.6rem;
       text-align: left; }
+  .date__container__btn {
+    margin-top: 0.5rem; }
+    .date__container__btn .btn {
+      margin-left: 1rem; }
+
+@media (max-width: 1400px) {
   .date__container__btn .btn {
-    margin-left: 1rem; }
+    margin-left: 0;
+    margin-top: 0.5rem; } }
