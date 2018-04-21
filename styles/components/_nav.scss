@@ -3,7 +3,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid $transparentWhite;
+    border-bottom: 4px double $transparentWhite;
     font-size: 1.6rem;
     img{
         max-width: 100px;
@@ -18,8 +18,8 @@
     text-transform: uppercase;
     li{
         align-content: center;
-        padding: 1rem 1rem;
         a{
+            padding: 1rem 1rem;
             color: $white;
             text-decoration: none;
         }

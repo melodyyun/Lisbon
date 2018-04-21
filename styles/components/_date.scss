@@ -6,7 +6,7 @@
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 6rem;
+        padding: 6rem 0;
         margin-top: 0.5rem;
     }
 
@@ -40,7 +40,7 @@
         span{
             font-family: Poppins;
             background:$black2;
-            border-radius: 0.2rem;
+            border-radius: 0.3rem;
             color: $white;
             width: 3.7rem;
             height: 4.5rem;
@@ -50,8 +50,9 @@
             margin-right: 1px;
         }
         .colon{
-            line-height: 6rem;
+            line-height: 3rem;
             margin: 0.7rem;
+            display: inline;
         }
         &__container__counter__cell:nth-child(2){
             font-family: Raleway;

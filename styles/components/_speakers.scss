@@ -1,0 +1,104 @@
+.speakers{
+    background: $white;
+    &__container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        figure{
+            box-shadow: 2px 4px 18px 0px $transparentBlackLight;
+            border-radius: 5px;
+            .speakers__container__img{
+                position: relative;
+                img{
+                    border-radius: 5px 5px 0 0;
+                    display: block;
+                    max-width: 100%;
+                }
+                .icons{
+                    position: absolute;
+                    bottom: 35px;
+                    left: 50%;
+                    transform: translateX( -50%);
+                    display: flex;
+                    flex-flow: row;
+                    display: none;
+                }
+                a{
+                    text-decoration: none;
+                }
+                .icon{
+                    // position: absolute;
+                    z-index: 1;
+                    bottom: 5px;
+                    left: 1px;
+                    background-color: $transparentBlackSuperDark;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    color: $white;
+                    padding: 0.5rem;
+                    margin: 0.5rem;
+                }
+                .icon:hover{
+                    background-color: $secondary;
+                }
+            }
+            figcaption{
+                text-align: center;
+                padding: 1px;
+                h4{
+                    font-family: Raleway;
+                    font-weight: 600;
+                    text-align: center;
+                    margin: 2rem 0 0 0;
+                }
+                p{
+                    font-size: 1.3rem;
+                    line-height: 2.2rem;
+                }
+            }
+        }
+        figure:hover{
+            transform: scale(1.01);
+            figcaption{
+                color: $white;
+                background-color: $primary;
+                border-radius: 0 0 5px 5px;
+                p{
+                    color: white;
+                }
+            }
+            .icons{
+                display: block;
+            }
+        }
+    }
+}
+.speaker__page--scroll{
+    display: flex;
+    flex: row;
+    justify-content: center;
+    // margin: 2rem;
+    padding: 2rem;
+    div{
+        width: 15px;
+        height: 15px;
+        background-color: $primary;
+        border-radius: 50%;
+        margin: 0.3rem;
+    }
+    a{
+        border: 1px double transparent;
+        text-decoration: none;
+    }
+    a:hover{
+        border: 1px double $secondary;
+        border-radius: 50%;
+            div{
+                background-color: $secondary;
+                padding: 2px;
+            }
+    }
+}
+
+// HOVER FOR SOCIAL MEDIA ICONS

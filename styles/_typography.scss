@@ -4,6 +4,7 @@
 body{
     @include fontSizer(16);
 }
+
 p{
     font-family: 'Poppins', sans-serif;
     color: #777777;
@@ -18,7 +19,7 @@ p{
     font-weight: 800;
     line-height: 26px;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 10rem;  
 }
 
 .section__subtitle{
@@ -29,10 +30,18 @@ p{
     text-align: center;
 }
 
-.txt-uppercase{
+.section__subtitle::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid $secondary;
+    width: 5rem;
+    margin: 2.5rem auto 4rem auto;
+}
+
+.txt--uppercase{
     text-transform: uppercase;
 }
 
-.txt-lowercase{
+.txt--lowercase{
     text-transform: lowercase;
 }

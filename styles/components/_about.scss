@@ -1,0 +1,48 @@
+.about{
+    background: $white;
+
+    &__article{
+        display: flex;
+        flex-flow: row wrap;
+        padding-bottom: 10rem;
+        article{
+            width: calc((96%)/3);
+            margin-right: 2%;
+            box-shadow: 2px 4px 18px 0px $transparentBlackLight;
+        }
+        article:last-child{
+            margin-right: 0;
+        }
+        article:hover{
+            box-shadow: 2px 4px 18px 0px $transparentBlackDark;
+            transform: scale(1.01);
+            z-index: 1;
+        }
+        h3{
+            padding: 0 2rem;
+            font-family: Raleway;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 26px;
+            text-align: left;
+        }
+        p{
+            padding: 0 2rem;
+            font-size: 1.4rem;
+        }
+        a{
+            padding: 1rem 2rem 2rem 2rem;
+            text-decoration: none;
+            color: $primary;
+            font-family: Poppins;
+            display: inline-block;
+            font-style: italic;
+        }
+        a:hover{
+            color: $secondary;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+}

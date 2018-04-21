@@ -1,0 +1,41 @@
+.join{
+    background: url(../images/purple-pattern-bg.png);
+    padding: 1px;
+
+    //parallax
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    p{
+        color: $white;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 14px;
+        text-align: center;
+    }
+    form{
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        padding: 3rem 0 10rem 0;
+        input[type=text]{
+            background: transparent;
+            border: 1px solid $white;
+            padding: 1rem 1rem;
+            border-radius: 5px 0px 0px 5px;
+            display: block;
+            color: white;
+            width: 300px;
+        }
+        input[type=text]::placeholder{
+            color: white;
+        }
+        input[type=submit]{
+            display: block;
+            border-radius: 0px 5px 5px 0px;
+            border: 1px solid $secondary;
+        }
+    }
+}
