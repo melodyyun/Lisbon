@@ -209,8 +209,9 @@ html {
     max-width: 90%; } }
 
 .main-header {
-  background-image: url(../images/main-image.png);
+  background: url(../images/main-image.png) no-repeat, center;
   height: 550px;
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -448,10 +449,11 @@ html {
     .about__article a:hover {
       color: #e85889; }
     .about__article img {
-      max-width: 100%; }
+      width: 100%; }
 
 .join {
-  background: url(../images/purple-pattern-bg.png);
+  background: url(../images/purple-pattern-bg.png) no-repeat, center;
+  background-size: cover;
   padding: 1px;
   background-attachment: fixed;
   background-position: center;
@@ -584,7 +586,7 @@ html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 2rem; }
+  padding: 3rem 0 10rem 0; }
   .speaker__page--scroll div {
     width: 15px;
     height: 15px;
@@ -600,3 +602,43 @@ html {
     .speaker__page--scroll a:hover div {
       background-color: #e85889;
       padding: 2px; }
+
+.pricing {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #FFF)), url(../images/pricing-image.png) no-repeat, center;
+  background: -webkit-linear-gradient(top, transparent 50%, #FFF 50%), url(../images/pricing-image.png) no-repeat, center;
+  background: -o-linear-gradient(top, transparent 50%, #FFF 50%), url(../images/pricing-image.png) no-repeat, center;
+  background: linear-gradient(180deg, transparent 50%, #FFF 50%), url(../images/pricing-image.png) no-repeat, center;
+  background-size: cover;
+  padding: 1px; }
+  .pricing .section__subtitle {
+    color: #FFF; }
+  .pricing__container {
+    background: #FFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.03);
+    box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.03); }
+    .pricing__container__price {
+      background-color: #fafafa;
+      margin: 2%;
+      padding: 4rem 7rem 6rem 7rem;
+      width: calc(92%/3); }
+      .pricing__container__price:nth-child(2) {
+        margin: 2% 0; }
+      .pricing__container__price h3 {
+        color: #222222;
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        text-align: center; }
+      .pricing__container__price p {
+        font-size: 14px;
+        font-weight: 300; }

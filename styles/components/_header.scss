@@ -1,6 +1,7 @@
 .main-header{
-    background-image: url(../images/main-image.png);
+    background: url(../images/main-image.png)     no-repeat, center;
     height: 550px;
+    background-size: cover;
     // height: 80vh;
 
     //parallax

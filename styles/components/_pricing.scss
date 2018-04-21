@@ -1,0 +1,38 @@
+.pricing{
+    background: 
+    linear-gradient(180deg, transparent 50%, $white 50%), url(../images/pricing-image.png) no-repeat, center;
+    background-size: cover;
+    // background-repeat: no-repeat;
+    padding: 1px;
+    .section__subtitle{
+        color: $white;
+    }
+    &__container{
+        background: $white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        box-shadow: 2px 4px 16px 0px $transparentBlackLight;
+        &__price{
+            background-color: $offWhite;
+            margin: 2%;
+            padding: 4rem 7rem 6rem 7rem;
+            width: calc(92%/3);
+            &:nth-child(2){
+                margin: 2% 0;
+            }
+            h3{
+                color: $black;
+                font-family: Raleway;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 26px;
+                text-align: center;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+    }
+}

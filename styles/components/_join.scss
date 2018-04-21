@@ -1,5 +1,6 @@
 .join{
-    background: url(../images/purple-pattern-bg.png);
+    background: url(../images/purple-pattern-bg.png) no-repeat, center;
+    background-size: cover;
     padding: 1px;
 
     //parallax
