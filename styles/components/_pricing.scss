@@ -14,24 +14,88 @@
         justify-content: space-around;
         box-shadow: 2px 4px 16px 0px $transparentBlackLight;
         &__price{
+            display: flex;
+            position: relative;
+            flex-flow: column;
             background-color: $offWhite;
             margin: 2%;
-            padding: 4rem 7rem 6rem 7rem;
+            padding: 4rem 0 6rem 0;
             width: calc(92%/3);
             &:nth-child(2){
                 margin: 2% 0;
             }
+            img{
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 1;
+            }
+            .best{
+                // FIX THIS SHIT
+                //FIS TIDJflkjlfkjsklfjdslkafjdsal
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 2;
+                transform: rotate(45deg);
+                color: $white;
+                text-align: center;
+                // margin-left: 15px;
+            }
             h3{
                 color: $black;
                 font-family: Raleway;
-                font-size: 20px;
+                font-size: 2rem;
                 font-weight: 500;
-                line-height: 26px;
+                line-height: 2.6rem;
                 text-align: center;
+                margin-bottom: 0;
             }
             p{
-                font-size: 14px;
+                font-size: 1.4rem;
                 font-weight: 300;
+                text-align: center;
+            }
+            .pricing-subtitle::after{
+                content: "";
+                display: block;
+                border-bottom: 1px solid $primary;
+                width: 5rem;
+                margin: 2.5rem auto 0.5rem auto;
+            }
+            &--dollar{
+                color: $black;
+                font-size: 3.6rem;
+            }
+            &--price{
+                color: $black;
+                font-size: 4rem;
+                font-weight: 500;
+            }
+            .price-num{
+                padding: 2rem 0;
+            }
+            ul{
+                padding: 0;
+                width: 100%;
+                margin: 0;
+            }
+            li{
+                border-top: 1px dashed $stupidGrey;
+                font-family: Poppins;
+                color:  $greyP;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 3.8rem;
+                text-align: left;
+                list-style: none;
+                padding-left: 15%;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            .btn{
+                margin: 1.5rem auto 0 auto;
+                justify-self: center;
             }
         }
     }

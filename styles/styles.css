@@ -626,19 +626,78 @@ html {
     -webkit-box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.03);
     box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.03); }
     .pricing__container__price {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column;
       background-color: #fafafa;
       margin: 2%;
-      padding: 4rem 7rem 6rem 7rem;
+      padding: 4rem 0 6rem 0;
       width: calc(92%/3); }
       .pricing__container__price:nth-child(2) {
         margin: 2% 0; }
+      .pricing__container__price img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1; }
+      .pricing__container__price .best {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        color: #FFF;
+        text-align: center; }
       .pricing__container__price h3 {
         color: #222222;
         font-family: Raleway;
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: 500;
-        line-height: 26px;
-        text-align: center; }
+        line-height: 2.6rem;
+        text-align: center;
+        margin-bottom: 0; }
       .pricing__container__price p {
-        font-size: 14px;
-        font-weight: 300; }
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-align: center; }
+      .pricing__container__price .pricing-subtitle::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid #463f8c;
+        width: 5rem;
+        margin: 2.5rem auto 0.5rem auto; }
+      .pricing__container__price--dollar {
+        color: #222222;
+        font-size: 3.6rem; }
+      .pricing__container__price--price {
+        color: #222222;
+        font-size: 4rem;
+        font-weight: 500; }
+      .pricing__container__price .price-num {
+        padding: 2rem 0; }
+      .pricing__container__price ul {
+        padding: 0;
+        width: 100%;
+        margin: 0; }
+      .pricing__container__price li {
+        border-top: 1px dashed #e0e0e0;
+        font-family: Poppins;
+        color: #777777;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 3.8rem;
+        text-align: left;
+        list-style: none;
+        padding-left: 15%;
+        padding-top: 8px;
+        padding-bottom: 8px; }
+      .pricing__container__price .btn {
+        margin: 1.5rem auto 0 auto;
+        justify-self: center; }
