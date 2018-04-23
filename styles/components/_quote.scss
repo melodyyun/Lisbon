@@ -5,7 +5,8 @@
         padding: 10rem 0;
         display: flex;
         flex-flow: row wrap;
-        .quote__pictures{
+    }
+    .quote__pictures{
             display: flex;
             flex-flow: column;
             justify-content: space-around;
@@ -14,7 +15,7 @@
             height: auto;
             margin-right: 2rem;
             img{
-                width: calc(100% - 5px);
+                width: 5.5rem;
                 box-sizing: content-box;
                 height: auto;
                 border-radius: 50%;
@@ -25,52 +26,98 @@
                 border: 10px solid $white;
             }
         }
+    .quote__pictures:first-child{
+        margin-top: -5px;
+    }
+    .quote__text--smart{
+        font-family: PlantagenetCherokee;
+        color:  $white;
+        font-size: 110px;
+        margin: 0rem 2rem;
+        height: auto;
+        line-height: 113px;
+    }
+    .quote__text{
+        width: 45%;
+        color: $white;
+        p{
+            color: $white;
+        }
+        &--title{
+            font-family: 'Raleway', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 4.6rem;
+            margin-top: 0;
+        }
+        blockquote{
+            font-family: 'Poppins', sans-serif;
+            color:  #bfb9f6;
+            font-size: 1.7rem;
+            font-style: italic;
+            line-height: 2.8rem;
+            margin: 0;
+        }
+        p{
+            font-family: Poppins;
+            color:  #bfb9f6;
+            font-size: 17px;
+            font-style: italic;
+            line-height: 28px;
+            span{
+                color:  #fafafa;
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 28px;
+                font-style: normal;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .quote{
+        .quote__text{
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .quote{
+        .quote__text{
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width:760px){
+    .quote{
+        .wrapper{
+            display: block;
+            position: relative;
+        }
+        .quote__pictures{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            justify-content: center;
+            // WHY IS THIS NOT WOKRING!!!!!!!!!
+            margin-right: 0;
+        }
         .quote__pictures:first-child{
-            margin-top: -5px;
+            margin-top: 0;
+        }
+        .quote__text--smart{
+            display: none;
         }
         .quote__text{
-            width: 45%;
-            color: $white;
-            p{
-                color: $white;
-            }
+            width: 100%;
+            margin-top: 1rem;
             &--smart{
-                font-family: PlantagenetCherokee;
-                color:  $white;
-                font-size: 110px;
-                margin: 0rem 2rem;
-                height: auto;
-                line-height: 113px;
-            }
-            &--title{
-                font-family: 'Raleway', sans-serif;
-                font-size: 3rem;
-                font-weight: 700;
-                line-height: 4.6rem;
-                margin-top: 0;
-            }
-            blockquote{
-                font-family: 'Poppins', sans-serif;
-                color:  #bfb9f6;
-                font-size: 1.7rem;
-                font-style: italic;
-                line-height: 2.8rem;
-                margin: 0;
-            }
-            p{
-                font-family: Poppins;
-                color:  #bfb9f6;
-                font-size: 17px;
-                font-style: italic;
-                line-height: 28px;
-                span{
-                    color:  #fafafa;
-                    font-family: Poppins;
-                    font-size: 18px;
-                    font-weight: 600;
-                    line-height: 28px;
-                    font-style: normal;
-                }
+                position: absolute;
+                line-height: 10px;
             }
         }
     }
