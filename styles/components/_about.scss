@@ -9,6 +9,7 @@
             width: calc((96%)/3);
             margin-right: 2%;
             box-shadow: 2px 4px 18px 0px $transparentBlackLight;
+            transition: all 0.3s ease;
         }
         article:last-child{
             margin-right: 0;

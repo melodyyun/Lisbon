@@ -1,0 +1,115 @@
+.event{
+    background-color: $offWhite;
+    padding: 1px;
+    .event__container{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10rem;
+        .event__schedule{
+            font-family: Poppins;
+            width: 25%;
+            flex-grow: 1;
+            ul{
+                background-color: $white;
+                padding-left: 0;
+                list-style: none;
+                li{
+                    padding: 1rem 3rem;
+                    border: 1px solid $stupidGrey;
+                    border-bottom: 0px;
+                    transition: all 0.3s ease;
+                }
+                li:last-child{
+                    border-bottom: 1px solid $stupidGrey;
+                }
+                li:hover{
+                    background-color: $secondary;
+                    p{
+                        color: white;
+                    }
+                }
+                p{
+                    color:  $black;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    margin: 0;
+                }
+                .small-date{
+                    color: $greyPLight;
+                    font-size: 1.3rem;
+                    line-height: 2.6rem;
+                    text-align: left;
+                    font-weight: 400;
+                }
+            }
+        }
+        .dotted{
+            margin: 0 1rem 0 4rem;
+            padding: 10px;
+            height: 130px;
+            max-width: 20px;
+            // background: pink;
+            border-left: 1px dashed $stupidGrey;
+            border-top: 1px dashed $stupidGrey;
+        }
+        .dotted--top{
+            border-bottom: 1px dashed $stupidGrey;
+        }
+        .dotted--bottom{
+            border-bottom: 1px dashed $stupidGrey;
+        }
+        .event__speaker{
+            width: 60%;
+            flex-grow: 3;
+        }
+        .event__speaker__topic{
+            flex-grow: 1;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            .speaker-img{
+                align-items: center;
+                max-width: 15rem;
+                margin: 1rem;
+                img{
+                    border: 1rem solid $eventImgBorder;
+                    border-radius: 50%;
+                    width: 100%;
+                }
+            }
+            .speaker-info{
+                flex-grow: 1;
+                .name{
+                    font-family: Raleway;
+                    color: $black;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    margin: 0.3rem 0;
+                    
+                }
+                .time{
+                    font-family: Raleway;
+                    color: $greyP;
+                    font-size: 13px;
+                    font-weight: 400;
+                    padding-left: 1rem;
+                }
+                .title{
+                    font-family: Raleway;
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin: 0;
+                }
+                .description{
+                    color:  #666666;
+                    font-size: 13px;
+                    line-height: 24px;
+                    margin: 0.3rem 0;
+                }
+            }
+        }
+    }
+}

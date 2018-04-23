@@ -419,7 +419,10 @@ html {
       width: calc((96%)/3);
       margin-right: 2%;
       -webkit-box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
-      box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03); }
+      box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
     .about__article article:last-child {
       margin-right: 0; }
     .about__article article:hover {
@@ -515,7 +518,10 @@ html {
     .speakers__container figure {
       -webkit-box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
       box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
-      border-radius: 5px; }
+      border-radius: 5px;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
       .speakers__container figure .speakers__container__img {
         position: relative; }
         .speakers__container figure .speakers__container__img img {
@@ -549,7 +555,10 @@ html {
           height: 30px;
           color: #FFF;
           padding: 0.5rem;
-          margin: 0.5rem; }
+          margin: 0.5rem;
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
         .speakers__container figure .speakers__container__img .icon:hover {
           background-color: #e85889; }
       .speakers__container figure figcaption {
@@ -592,10 +601,16 @@ html {
     height: 15px;
     background-color: #463f8c;
     border-radius: 50%;
-    margin: 0.3rem; }
+    margin: 0.3rem;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   .speaker__page--scroll a {
     border: 1px double transparent;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   .speaker__page--scroll a:hover {
     border: 1px double #e85889;
     border-radius: 50%; }
@@ -608,8 +623,8 @@ html {
   background: -webkit-linear-gradient(top, transparent 50%, #FFF 50%), url(../images/pricing-image.png) no-repeat, center;
   background: -o-linear-gradient(top, transparent 50%, #FFF 50%), url(../images/pricing-image.png) no-repeat, center;
   background: linear-gradient(180deg, transparent 50%, #FFF 50%), url(../images/pricing-image.png) no-repeat, center;
-  background-size: cover;
-  padding: 1px; }
+  padding: 1px 1px 10rem 1px;
+  background-attachment: fixed; }
   .pricing .section__subtitle {
     color: #FFF; }
   .pricing__container {
@@ -701,3 +716,204 @@ html {
       .pricing__container__price .btn {
         margin: 1.5rem auto 0 auto;
         justify-self: center; }
+
+.event {
+  background-color: #fafafa;
+  padding: 1px; }
+  .event .event__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 10rem; }
+    .event .event__container .event__schedule {
+      font-family: Poppins;
+      width: 25%;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
+      .event .event__container .event__schedule ul {
+        background-color: #FFF;
+        padding-left: 0;
+        list-style: none; }
+        .event .event__container .event__schedule ul li {
+          padding: 1rem 3rem;
+          border: 1px solid #e0e0e0;
+          border-bottom: 0px;
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+        .event .event__container .event__schedule ul li:last-child {
+          border-bottom: 1px solid #e0e0e0; }
+        .event .event__container .event__schedule ul li:hover {
+          background-color: #e85889; }
+          .event .event__container .event__schedule ul li:hover p {
+            color: white; }
+        .event .event__container .event__schedule ul p {
+          color: #222222;
+          font-size: 1.8rem;
+          font-weight: 500;
+          margin: 0; }
+        .event .event__container .event__schedule ul .small-date {
+          color: #ababab;
+          font-size: 1.3rem;
+          line-height: 2.6rem;
+          text-align: left;
+          font-weight: 400; }
+    .event .event__container .dotted {
+      margin: 0 1rem 0 4rem;
+      padding: 10px;
+      height: 130px;
+      max-width: 20px;
+      border-left: 1px dashed #e0e0e0;
+      border-top: 1px dashed #e0e0e0; }
+    .event .event__container .dotted--top {
+      border-bottom: 1px dashed #e0e0e0; }
+    .event .event__container .dotted--bottom {
+      border-bottom: 1px dashed #e0e0e0; }
+    .event .event__container .event__speaker {
+      width: 60%;
+      -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+      flex-grow: 3; }
+    .event .event__container .event__speaker__topic {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+      flex-flow: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .event .event__container .event__speaker__topic .speaker-img {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        max-width: 15rem;
+        margin: 1rem; }
+        .event .event__container .event__speaker__topic .speaker-img img {
+          border: 1rem solid #fff2f2;
+          border-radius: 50%;
+          width: 100%; }
+      .event .event__container .event__speaker__topic .speaker-info {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1; }
+        .event .event__container .event__speaker__topic .speaker-info .name {
+          font-family: Raleway;
+          color: #222222;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 28px;
+          margin: 0.3rem 0; }
+        .event .event__container .event__speaker__topic .speaker-info .time {
+          font-family: Raleway;
+          color: #777777;
+          font-size: 13px;
+          font-weight: 400;
+          padding-left: 1rem; }
+        .event .event__container .event__speaker__topic .speaker-info .title {
+          font-family: Raleway;
+          font-size: 18px;
+          line-height: 28px;
+          margin: 0; }
+        .event .event__container .event__speaker__topic .speaker-info .description {
+          color: #666666;
+          font-size: 13px;
+          line-height: 24px;
+          margin: 0.3rem 0; }
+
+.quote {
+  background-color: #463f8c;
+  padding: 1px; }
+  .quote .wrapper {
+    padding: 10rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap; }
+    .quote .wrapper .quote__pictures {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 5%;
+      height: auto;
+      margin-right: 2rem; }
+      .quote .wrapper .quote__pictures img {
+        width: calc(100% - 5px);
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        height: auto;
+        border-radius: 50%;
+        border: 5px solid transparent;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      .quote .wrapper .quote__pictures img:hover {
+        border: 10px solid #FFF; }
+    .quote .wrapper .quote__pictures:first-child {
+      margin-top: -5px; }
+    .quote .wrapper .quote__text {
+      width: 45%;
+      color: #FFF; }
+      .quote .wrapper .quote__text p {
+        color: #FFF; }
+      .quote .wrapper .quote__text--smart {
+        font-family: PlantagenetCherokee;
+        color: #FFF;
+        font-size: 110px;
+        margin: 0rem 2rem;
+        height: auto;
+        line-height: 113px; }
+      .quote .wrapper .quote__text--title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 4.6rem;
+        margin-top: 0; }
+      .quote .wrapper .quote__text blockquote {
+        font-family: 'Poppins', sans-serif;
+        color: #bfb9f6;
+        font-size: 1.7rem;
+        font-style: italic;
+        line-height: 2.8rem;
+        margin: 0; }
+      .quote .wrapper .quote__text p {
+        font-family: Poppins;
+        color: #bfb9f6;
+        font-size: 17px;
+        font-style: italic;
+        line-height: 28px; }
+        .quote .wrapper .quote__text p span {
+          color: #fafafa;
+          font-family: Poppins;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 28px;
+          font-style: normal; }

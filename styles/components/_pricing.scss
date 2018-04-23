@@ -1,9 +1,11 @@
 .pricing{
     background: 
     linear-gradient(180deg, transparent 50%, $white 50%), url(../images/pricing-image.png) no-repeat, center;
-    background-size: cover;
     // background-repeat: no-repeat;
-    padding: 1px;
+    padding: 1px 1px 10rem 1px;
+
+    //parallax
+    background-attachment: fixed;
     .section__subtitle{
         color: $white;
     }
