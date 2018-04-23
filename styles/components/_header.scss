@@ -1,8 +1,6 @@
 .main-header{
     background: url(../images/main-image.png)     no-repeat, center;
-    height: 550px;
     background-size: cover;
-    // height: 80vh;
 
     //parallax
     background-attachment: fixed;
@@ -51,6 +49,7 @@
 
     &__hero__call-to-action{
         order: 2;
+        padding-bottom: 2rem;
     }
 
     &__hero__call-to-action__scroll--right{

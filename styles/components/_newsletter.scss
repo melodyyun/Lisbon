@@ -1,0 +1,53 @@
+.newsletter{
+    background: url(../images/white-pattern-bg.png) no-repeat, center;
+    background-size: cover;
+    padding: 1px;
+
+    //parallax
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    p{
+        color: $white;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 14px;
+        text-align: center;
+    }
+    form{
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        padding: 3rem 0 10rem 0;
+        input[type=text]{
+            background: $white;
+            border: 1px solid $white;
+            padding: 1rem 1rem;
+            border-radius: 5px 0px 0px 5px;
+            display: block;
+            width: 300px;
+        }
+        input[type=submit]{
+            display: block;
+            border-radius: 0px 5px 5px 0px;
+            border: 1px solid $secondary;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .newsletter{
+        form{
+        display: block;
+            input[type=text]{
+                border-radius: 5px;
+                margin-bottom: 1rem;
+            }
+            input[type=submit]{
+                border-radius: 5px;
+            }
+        }
+    }
+}
