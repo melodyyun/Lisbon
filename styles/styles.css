@@ -917,3 +917,96 @@ html {
           font-weight: 600;
           line-height: 28px;
           font-style: normal; }
+
+.news .wrapper {
+  padding: 1px; }
+
+.news img {
+  max-width: 100%; }
+
+.news .btn {
+  margin: 0 auto; }
+
+.news h4 {
+  font-family: Raleway;
+  color: #222222;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+.news .author {
+  color: #ababab;
+  font-size: 1.3rem; }
+
+.news .author::after {
+  content: '';
+  border-bottom: 1px solid #ababab;
+  height: 1px;
+  display: block;
+  width: 5rem;
+  margin: 0.5rem 0 1rem 0; }
+
+.news p {
+  font-size: 14px;
+  /* Approximation due to font substitution */ }
+
+.col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: min-max(100px, auto);
+  grid-gap: 2rem; }
+
+.news__container {
+  min-height: 301px;
+  background-color: #fafafa; }
+  .news__container .text {
+    padding: 5.5rem 3rem;
+    vertical-align: middle; }
+
+.news__container--1 {
+  grid-column: 1/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row; }
+  .news__container--1 img {
+    margin-right: 2rem; }
+
+.news__container--2 {
+  grid-column: 3/4;
+  grid-row: 1/3; }
+  .news__container--2 img {
+    margin-bottom: 2rem; }
+
+.news__container--fb {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #463f8c), color-stop(50%, #fafafa));
+  background: -webkit-linear-gradient(top, #463f8c 50%, #fafafa 50%);
+  background: -o-linear-gradient(top, #463f8c 50%, #fafafa 50%);
+  background: linear-gradient(180deg, #463f8c 50%, #fafafa 50%);
+  position: relative; }
+  .news__container--fb .fa-link {
+    font-size: 3rem;
+    display: block;
+    margin: 1rem auto; }
+  .news__container--fb .link-text {
+    font-family: Raleway;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block; }
+  .news__container--fb .links {
+    text-align: center; }
+  .news__container--fb a {
+    color: white;
+    text-decoration: none; }
+  .news__container--fb .btn {
+    text-align: left;
+    display: inline-block;
+    position: absolute;
+    bottom: 5.5rem;
+    left: 3rem; }

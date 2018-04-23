@@ -1,0 +1,102 @@
+.news{
+    .wrapper{
+        padding: 1px;
+    }
+    img{
+        max-width: 100%;
+        // max-height: 301px;
+    }
+    .btn{
+        // display: block;
+        margin: 0 auto;
+    }
+    h4{
+        font-family: Raleway;
+        color: $black;
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+    .author{
+        color:  $greyPLight;
+        font-size: 1.3rem;
+    }
+    .author::after{
+        content: '';
+        border-bottom: 1px solid $greyPLight;
+        height: 1px;
+        display: block;
+        width: 5rem;
+        margin: 0.5rem 0 1rem 0;
+    }
+    p{
+    font-size: 14px;/* Approximation due to font substitution */
+    }
+}
+.col-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-max(100px, auto);
+    grid-gap: 2rem; 
+}
+.news__container{
+    min-height: 301px;
+    background-color: $offWhite;
+    // display: flex;
+    // flex-flow: column;
+    // justify-content: center;
+    .text{
+        padding: 5.5rem 3rem;
+        vertical-align: middle;
+    }
+}
+.news__container--1{
+    grid-column: 1/3;
+    display: flex;
+    flex-flow: row;
+    img{
+        margin-right: 2rem;
+    }
+}
+
+.news__container--2{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    img{
+        margin-bottom: 2rem;
+    }
+}
+.news__container--fb{
+    background: linear-gradient(180deg, $primary 50%, $offWhite 50%);
+    position: relative;
+    // text-align: center;
+    .fa-link{
+        font-size: 3rem;
+        display: block;
+        margin: 1rem auto;
+    }
+    // a[href="http://www.facebook.com"]
+    .link-text{
+        font-family: Raleway;
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+    .links{
+        text-align: center;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .btn{
+        text-align: left;
+        display: inline-block;
+        position: absolute;
+        bottom: 5.5rem;
+        left: 3rem;
+    }
+}
