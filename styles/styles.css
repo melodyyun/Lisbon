@@ -300,6 +300,10 @@ html {
   font-size: 1.6rem; }
   .nav img {
     max-width: 100px; }
+  .nav .toggle {
+    color: #FFF;
+    font-size: 3rem;
+    display: none; }
 
 .nav__list {
   display: -webkit-box;
@@ -317,7 +321,11 @@ html {
     .nav__list li a {
       padding: 1rem 1rem;
       color: #FFF;
-      text-decoration: none; }
+      text-decoration: none;
+      border-bottom: 2px solid transparent; }
+  .nav__list a:hover {
+    color: #e85889;
+    border-bottom: 2px solid #e85889; }
   .nav__list .nav__list__item--pinkBG {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -333,6 +341,38 @@ html {
     width: 35px;
     height: 35px;
     color: #FFF; }
+
+@media (max-width: 860px) {
+  .nav .toggle {
+    display: block; }
+  .nav__list {
+    background: rgba(38, 38, 38, 0.9);
+    color: #463f8c;
+    display: block;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    position: absolute;
+    top: 40px;
+    border: 2px solid #333333;
+    display: none; }
+    .nav__list li {
+      padding: 1rem; }
+    .nav__list a:hover {
+      color: #e85889;
+      border-bottom: 2px solid #e85889; }
+    .nav__list .nav__list__item--pinkBG {
+      display: none; }
+  .nav__list::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #333333;
+    position: absolute;
+    top: -15px;
+    right: 0px; } }
 
 .date {
   background-color: #fafafa; }
