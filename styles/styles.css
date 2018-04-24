@@ -535,7 +535,8 @@ html {
       border-radius: 5px;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
+      transition: all 0.3s ease;
+      margin: 0.5rem; }
       .speakers__container figure .speakers__container__img {
         position: relative; }
         .speakers__container figure .speakers__container__img img {
@@ -560,7 +561,7 @@ html {
         .speakers__container figure .speakers__container__img a {
           text-decoration: none; }
         .speakers__container figure .speakers__container__img .icon {
-          z-index: 1;
+          z-index: 2;
           bottom: 5px;
           left: 1px;
           background-color: rgba(0, 0, 0, 0.55);
@@ -593,7 +594,8 @@ html {
       .speakers__container figure:hover figcaption {
         color: #FFF;
         background-color: #463f8c;
-        border-radius: 0 0 5px 5px; }
+        border-radius: 0 0 5px 5px;
+        z-index: 1; }
         .speakers__container figure:hover figcaption p {
           color: white; }
       .speakers__container figure:hover .icons {
@@ -631,6 +633,10 @@ html {
     .speaker__page--scroll a:hover div {
       background-color: #e85889;
       padding: 2px; }
+
+@media (max-width: 900px) {
+  .section__title {
+    margin-top: 5rem; } }
 
 .pricing {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #FFF)), url(../images/pricing-image.png) no-repeat, center;
