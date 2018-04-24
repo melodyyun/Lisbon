@@ -1,7 +1,6 @@
 .pricing{
     background: 
     linear-gradient(180deg, transparent 50%, $white 50%), url(../images/pricing-image.png) no-repeat, center;
-    // background-repeat: no-repeat;
     padding: 1px 1px 10rem 1px;
 
     //parallax
@@ -151,14 +150,28 @@
 
 @media (max-width: 640px){
     .pricing{
+        background-attachment: scroll;
         &__container{
             display: block;
+            width: 70%;
+            margin: 0 auto;
             &__price{
-                width: 100%;
-                margin: 1rem 0rem;
+                width: 80%;
+                margin: 2rem auto;
                 &:nth-child(2){
-                margin: 0;
+                margin: 2rem auto;
             }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .pricing{
+        &__container{
+            width: 90%;
+            &__price{
+                width: 90%;
             }
         }
     }

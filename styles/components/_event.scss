@@ -133,7 +133,7 @@
                     width: 100%;
                     display: flex;
                     flex-flow: row wrap;
-                    justify-content: space-between;
+                    justify-content: center;
                     li{
                         display: inline-block;
                         border-bottom: 1px solid $stupidGrey;
@@ -144,14 +144,15 @@
             .event__speaker{
                 width: 100%;
                 .event__speaker__topic{
-                    display: block;
+                    // display: block;
                     border: 1px dashed $stupidGrey;
                     padding: 2rem;
                     margin: 2rem 0;
                     width: 100%;
                     .speaker-img{
                         width: 8rem;
-                        margin: 0 auto;
+                        margin: 0 1rem;
+                        min-width: 8rem;
                     }
                 }
             }
@@ -172,6 +173,15 @@
                     }
                 }
             }
+            .event__speaker{
+                .event__speaker__topic{
+                    display: block;
+                    .speaker-img{
+                        width: 8rem;
+                        margin: 0 auto;
+                        }
+                    }
+                }
+            }
         }
     }
-}

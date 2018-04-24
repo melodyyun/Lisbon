@@ -853,13 +853,23 @@ html {
       color: #e85889; } }
 
 @media (max-width: 640px) {
+  .pricing {
+    background-attachment: scroll; }
+    .pricing__container {
+      display: block;
+      width: 70%;
+      margin: 0 auto; }
+      .pricing__container__price {
+        width: 80%;
+        margin: 2rem auto; }
+        .pricing__container__price:nth-child(2) {
+          margin: 2rem auto; } }
+
+@media (max-width: 480px) {
   .pricing__container {
-    display: block; }
+    width: 90%; }
     .pricing__container__price {
-      width: 100%;
-      margin: 1rem 0rem; }
-      .pricing__container__price:nth-child(2) {
-        margin: 0; } }
+      width: 90%; } }
 
 .event {
   background-color: #fafafa;
@@ -1008,23 +1018,23 @@ html {
         -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between; }
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
         .event .event__container .event__schedule ul li {
           display: inline-block;
           border-bottom: 1px solid #e0e0e0; }
     .event .event__container .event__speaker {
       width: 100%; }
       .event .event__container .event__speaker .event__speaker__topic {
-        display: block;
         border: 1px dashed #e0e0e0;
         padding: 2rem;
         margin: 2rem 0;
         width: 100%; }
         .event .event__container .event__speaker .event__speaker__topic .speaker-img {
           width: 8rem;
-          margin: 0 auto; } }
+          margin: 0 1rem;
+          min-width: 8rem; } }
 
 @media (max-width: 690px) {
   .event .event__container .event__schedule ul {
@@ -1032,7 +1042,12 @@ html {
     display: block; }
     .event .event__container .event__schedule ul li {
       display: block;
-      border-bottom: 0px; } }
+      border-bottom: 0px; }
+  .event .event__container .event__speaker .event__speaker__topic {
+    display: block; }
+    .event .event__container .event__speaker .event__speaker__topic .speaker-img {
+      width: 8rem;
+      margin: 0 auto; } }
 
 .quote {
   background-color: #463f8c;
@@ -1430,13 +1445,13 @@ footer {
   footer .after::after {
     display: none; }
   .footer-menu ul {
-    width: 100%; } }
+    width: 100%; }
+    .footer-menu ul a {
+      padding: 0.5rem; } }
 
 @media (max-width: 900px) {
   footer .contact__container .icon {
     margin: 0 0.5rem; }
-  footer .after::after {
-    display: none; }
   .footer-menu ul {
     width: 100%; } }
 

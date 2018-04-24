@@ -107,14 +107,15 @@ footer{
             }
         }
         .after::after {
-            // content: none;
             display: none;
-            // background: pink;
         }
     }
     .footer-menu{
         ul{
             width: 100%;
+            a{
+                padding: 0.5rem;
+            }
         }
     }
 }
@@ -125,11 +126,6 @@ footer{
             .icon{
                 margin: 0 0.5rem;
             }
-        }
-        .after::after {
-            // content: none;
-            display: none;
-            // background: pink;
         }
     }
     .footer-menu{

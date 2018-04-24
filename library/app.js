@@ -2,7 +2,6 @@ const app = {};
 
 app.toggleNav = () => {
     $('.toggle').on('click', function () {
-        console.log('toggle was clicked');
         if ($(this).next().is(':hidden')) {
             $(this).next().slideDown('fast');
         } else {
@@ -15,12 +14,21 @@ app.checkScreenSize = () => {
     $(window).resize(function () {
         winWidth = $(window).width();
         if(winWidth > 860){
-            $('.nav__list').css('display', 'flex');
+            app.navDisplayFlex();
         }else{
-            $('.nav__list').css('display', 'none');
+            app.navDisplayNone();
         }
     });
 }
+
+app.navDisplayFlex = () => {
+    $('.nav__list').css('display', 'flex');
+}
+
+app.navDisplayNone = () => {
+    $('.nav__list').css('display', 'none');
+}
+
 
 //function ready
 $(document).ready(function () {
