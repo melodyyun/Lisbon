@@ -824,21 +824,6 @@ html {
       transition: all 0.3s ease; }
       .pricing__container__price:nth-child(2) {
         margin: 2% 0; }
-      .pricing__container__price img {
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 1; }
-      .pricing__container__price .best {
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 2;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-        color: #FFF;
-        text-align: center; }
       .pricing__container__price h3 {
         color: #222222;
         font-family: Raleway;
@@ -888,6 +873,20 @@ html {
     .pricing__container__price:hover {
       -webkit-box-shadow: 0px 0px 10px #e85889;
       box-shadow: 0px 0px 10px #e85889; }
+    .pricing__container .optimal {
+      position: relative;
+      overflow: hidden; }
+      .pricing__container .optimal .banner {
+        position: absolute;
+        background-color: #463f8c;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        right: -43px;
+        top: 12px; }
+        .pricing__container .optimal .banner .best {
+          color: #FFF;
+          padding: 0 4rem; }
 
 @media (max-width: 768px) {
   .pricing__container {

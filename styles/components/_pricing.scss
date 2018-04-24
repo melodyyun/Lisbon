@@ -27,23 +27,23 @@
             &:nth-child(2){
                 margin: 2% 0;
             }
-            img{
-                position: absolute;
-                right: 0;
-                top: 0;
-                z-index: 1;
-            }
-            .best{
-                // FIX THIS SHIT
-                //FIS TIDJflkjlfkjsklfjdslkafjdsal
-                position: absolute;
-                right: 0;
-                top: 0;
-                z-index: 2;
-                transform: rotate(45deg);
-                color: $white;
-                text-align: center;
-            }
+            // img{
+            //     position: absolute;
+            //     right: 0;
+            //     top: 0;
+            //     z-index: 1;
+            // }
+            // .best{
+            //     // FIX THIS SHIT
+            //     //FIS TIDJflkjlfkjsklfjdslkafjdsal
+            //     position: absolute;
+            //     right: 0;
+            //     top: 0;
+            //     z-index: 2;
+            //     transform: rotate(45deg);
+            //     color: $white;
+            //     text-align: center;
+            // }
             h3{
                 color: $black;
                 font-family: Raleway;
@@ -102,6 +102,22 @@
         }
         &__price:hover{
             box-shadow: 0px 0px 10px $secondary;
+        }
+
+        .optimal{
+            position: relative;
+            overflow: hidden;
+            .banner{
+                position: absolute;
+                background-color: $primary;
+                transform: rotate(45deg);
+                right: -43px;
+                top: 12px;
+                .best{
+                    color: $white;
+                    padding: 0 4rem;
+                }
+            }
         }
     }
 }
