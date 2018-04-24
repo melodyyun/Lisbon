@@ -166,13 +166,18 @@
     }
 }
 
-@media (max-width: 480px){
+@media(max-width:900px){
     .pricing{
-        &__container{
-            width: 90%;
-            &__price{
-                width: 90%;
-            }
-        }
+        padding-bottom: 5rem;
     }
 }
+
+@media (max-width: 480px){
+    .pricing{
+        padding-bottom: 2rem;
+    }
+}
+
+
+
+

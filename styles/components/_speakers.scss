@@ -126,13 +126,18 @@
             display: flex;
             flex-flow: row wrap;
             justify-content: space-around;
-            figure{
-                .speakers__container__img{
-                    img{
-                        
-                    }
-                }
-            }
         }
+    }
+}
+
+@media(max-width:900px){
+    .speaker__page--scroll{
+    padding-bottom: 5rem;
+    }
+}
+
+@media(max-width:480px){
+    .speaker__page--scroll{
+    padding-bottom: 2rem;
     }
 }

@@ -145,3 +145,10 @@ footer{
         }
     }
 }
+
+
+@media(max-width: 480px){
+    .footer-menu{
+        padding-bottom: 2rem;
+    }
+}

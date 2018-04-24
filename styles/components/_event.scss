@@ -185,3 +185,19 @@
             }
         }
     }
+
+@media(max-width:900px){
+    .event{
+        .event__container{
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+@media(max-width:480px){
+    .event{
+        .event__container{
+            margin-bottom: 2rem;
+        }
+    }
+}

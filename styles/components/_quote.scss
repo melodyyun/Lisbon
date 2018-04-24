@@ -86,6 +86,9 @@
 
 @media (max-width: 900px){
     .quote{
+        .wrapper{
+            padding: 5rem 0;
+        }
         .quote__text{
             width: 80%;
         }
@@ -119,6 +122,14 @@
                 position: absolute;
                 line-height: 10px;
             }
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .quote{
+        .wrapper{
+            padding: 2rem 0;
         }
     }
 }
