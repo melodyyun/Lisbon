@@ -196,10 +196,51 @@ html {
   color: #FFF;
   padding: 1rem 3rem;
   text-decoration: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s; }
 
 .btn--primary {
   background: #e85889; }
+
+.btn:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.13)), color-stop(77%, rgba(255, 255, 255, 0.13)), color-stop(92%, rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%); }
+
+/* Hover state - trigger effect */
+.btn:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  -webkit-transition-property: left, top, opacity;
+  -o-transition-property: left, top, opacity;
+  transition-property: left, top, opacity;
+  -webkit-transition-duration: 0.7s, 0.7s, 0.15s;
+  -o-transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease; }
+
+/* Active state */
+.btn:active:after {
+  opacity: 0; }
 
 .btn--secondary {
   background: #463f8c; }
