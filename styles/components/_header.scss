@@ -66,3 +66,19 @@
     }
 }
 
+@media(max-width:480px){
+    .main-header{
+    background: url(../images/main-image.png)     no-repeat, center;
+    background-size: cover;
+
+    //parallax
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__hero__call-to-action__scroll{
+        display: none;
+        }
+    }
+}
