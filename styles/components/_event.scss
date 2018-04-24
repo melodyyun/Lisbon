@@ -1,6 +1,6 @@
 .event{
     background-color: $offWhite;
-    padding: 1px;
+    padding: 0.1rem;
     .event__container{
         display: flex;
         flex-flow: row;
@@ -12,10 +12,10 @@
             width: 25%;
             flex-grow: 1;
             ul{
-                background-color: $white;
                 padding-left: 0;
                 list-style: none;
                 li{
+                    background-color: $white;
                     padding: 1rem 3rem;
                     border: 1px solid $stupidGrey;
                     border-bottom: 0px;
@@ -47,18 +47,18 @@
         }
         .dotted{
             margin: 0 1rem 0 4rem;
-            padding: 10px;
-            height: 130px;
-            max-width: 20px;
-            // background: pink;
+            padding: 1rem;
+            max-width: 2rem;
             border-left: 1px dashed $stupidGrey;
             border-top: 1px dashed $stupidGrey;
+            border-bottom: 1px dashed $stupidGrey;
         }
         .dotted--top{
-            border-bottom: 1px dashed $stupidGrey;
+            height: 120px;
         }
         .dotted--bottom{
-            border-bottom: 1px dashed $stupidGrey;
+            border-top: 0px;
+            height: 120px;
         }
         .event__speaker{
             width: 60%;
@@ -72,11 +72,12 @@
             .speaker-img{
                 align-items: center;
                 max-width: 15rem;
-                margin: 1rem;
+                margin: 1.5rem;
                 img{
                     border: 1rem solid $eventImgBorder;
                     border-radius: 50%;
                     width: 100%;
+                    transition: all 0.3s ease;
                 }
             }
             .speaker-info{
@@ -84,16 +85,16 @@
                 .name{
                     font-family: Raleway;
                     color: $black;
-                    font-size: 14px;
+                    font-size: 1.4rem;
                     font-weight: 500;
-                    line-height: 28px;
+                    line-height: 2.8rem;
                     margin: 0.3rem 0;
                     
                 }
                 .time{
                     font-family: Raleway;
                     color: $greyP;
-                    font-size: 13px;
+                    font-size: 1.3rem;
                     font-weight: 400;
                     padding-left: 1rem;
                 }
@@ -104,10 +105,71 @@
                     margin: 0;
                 }
                 .description{
-                    color:  #666666;
-                    font-size: 13px;
-                    line-height: 24px;
+                    color:  $greyP;
+                    font-size: 1.3rem;
+                    line-height: 2.4rem;
                     margin: 0.3rem 0;
+                }
+            }
+        }
+        .event__speaker__topic:hover img{
+            border: 1rem solid $white;
+            box-shadow: 0 0 2rem $greyP;
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media (max-width: 950px){
+    .event{
+        .event__container{
+            display: block;
+            .dots{
+                display: none;
+            }
+            .event__schedule{
+                width: 100%;
+                ul{
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    li{
+                        display: inline-block;
+                        border-bottom: 1px solid $stupidGrey;
+                    }
+                }
+            }
+
+            .event__speaker{
+                width: 100%;
+                .event__speaker__topic{
+                    display: block;
+                    border: 1px dashed $stupidGrey;
+                    padding: 2rem;
+                    margin: 2rem 0;
+                    width: 100%;
+                    .speaker-img{
+                        width: 8rem;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 690px){
+    .event{
+        .event__container{
+            .event__schedule{
+                ul{
+                    width: 100%;
+                    display: block;
+                    li{
+                        display: block;
+                        border-bottom: 0px;
+                    }
                 }
             }
         }

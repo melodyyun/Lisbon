@@ -2,12 +2,7 @@
     .wrapper{
         padding: 1px;
     }
-    // img{
-    //     max-width: 100%;
-    //     // max-height: 301px;
-    // }
     .btn{
-        // display: block;
         margin: 0 auto;
     }
     h4{
@@ -130,7 +125,6 @@
         }
     } 
 }
-// 655px
 
 @media (max-width: 655px){
     .col-3{
@@ -145,5 +139,8 @@
     }
     .news__container{
         margin: 2rem 0;
+    }
+    .news__container--3{
+        min-height: 201px;
     }
 }

@@ -11,6 +11,7 @@
     }
     &__container{
         background: $white;
+        padding: 1rem;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
@@ -23,6 +24,7 @@
             margin: 2%;
             padding: 4rem 0 6rem 0;
             width: calc(92%/3);
+            transition: all 0.3s ease;
             &:nth-child(2){
                 margin: 2% 0;
             }
@@ -42,7 +44,6 @@
                 transform: rotate(45deg);
                 color: $white;
                 text-align: center;
-                // margin-left: 15px;
             }
             h3{
                 color: $black;
@@ -96,8 +97,68 @@
                 padding-bottom: 8px;
             }
             .btn{
-                margin: 1.5rem auto 0 auto;
+                margin: 1.5rem auto 1.5rem auto;
                 justify-self: center;
+            }
+        }
+        &__price:hover{
+            box-shadow: 0px 0px 10px $secondary;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .pricing{
+        &__container{
+        background: $white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        box-shadow: 2px 4px 16px 0px $transparentBlackLight;
+            &__price{
+                min-width: 150px;
+                padding: 1rem 0 0.5rem 0;
+                img{
+                    display: none;
+                }
+                ul{
+                    display: none;
+                }
+            }
+            .price-num{
+                padding: 0.5rem 0;
+                margin: 0.5rem;
+            }
+            .optimal{
+                h3{
+                    color: $secondary;
+                }
+                .pricing__container__price--dollar{
+                    color: $secondary;
+                }
+
+                .pricing__container__price--price{
+                    color: $secondary;
+                }
+                .price-num{
+                    color: $secondary;
+                }
+                // box-shadow: 2px 4px 16px $primary;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px){
+    .pricing{
+        &__container{
+            display: block;
+            &__price{
+                width: 100%;
+                margin: 1rem 0rem;
+                &:nth-child(2){
+                margin: 0;
+            }
             }
         }
     }

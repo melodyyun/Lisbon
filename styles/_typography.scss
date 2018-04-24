@@ -45,3 +45,9 @@ p{
 .txt--lowercase{
     text-transform: lowercase;
 }
+
+@media(max-width: 900px){
+    .section__title{
+    margin-top: 5rem;  
+    }
+}
