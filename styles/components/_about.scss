@@ -53,24 +53,10 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        article{
-            width: 350px;
-            margin: 1rem;
-            box-shadow: 2px 4px 18px 0px $transparentBlackLight;
-            transition: all 0.3s ease;
+            article{
+                width: 350px;
+                margin: 1rem;
+            }
         }
-        // article:last-child{
-        //     display: flex;
-        //     flex-flow: row;
-        //     margin: 0;
-        //     width: 720px;
-        //     img{
-        //         width: 100%;
-        //     }
-        //     div{
-        //         width: 50%;
-        //     }
-        // }
     }
-}
 }
