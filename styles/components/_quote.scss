@@ -23,7 +23,8 @@
                 transition: all 0.3s ease;
             }
             img:hover{
-                border: 10px solid $white;
+                border: 0.5rem solid $white;
+                box-shadow: 0 0 1rem $offWhite;
             }
         }
     .quote__pictures:first-child{

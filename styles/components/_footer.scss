@@ -122,9 +122,11 @@ footer{
 
 @media (max-width:900px){
     footer{
+        padding: 1px;
         .contact__container{
+            margin-top: 1rem;
             .icon{
-                margin: 0 0.5rem;
+                margin: 1rem 1rem 0 0;
             }
         }
     }

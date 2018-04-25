@@ -249,6 +249,9 @@ html {
 .btn--secondary {
   background: #463f8c; }
 
+a:focus {
+  border: 1px solid #e85889; }
+
 @media (max-width: 1500px) {
   .wrapper {
     max-width: 80%; } }
@@ -263,7 +266,7 @@ html {
   background-attachment: fixed; }
   .main-header__hero {
     text-align: center;
-    padding: 6rem 0rem;
+    padding: 8rem 0rem;
     color: #FFF;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -290,13 +293,13 @@ html {
       font-size: 4.4rem;
       font-weight: 800;
       line-height: 5rem;
-      max-width: 700px; }
+      max-width: 70rem; }
   .main-header__hero__call-to-action__scroll {
     background-color: rgba(255, 255, 255, 0.22);
     color: #FFF;
     font-size: 1.5rem;
     text-decoration: none;
-    height: 60px;
+    height: 6rem;
     padding: 0 0.3rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -320,7 +323,7 @@ html {
 
 @media (max-width: 510px) {
   .main-header {
-    height: 600px;
+    height: 60rem;
     background-attachment: scroll; }
   .main-header__hero {
     padding: 1rem; } }
@@ -404,7 +407,8 @@ html {
     position: absolute;
     top: 40px;
     border: 2px solid #333333;
-    display: none; }
+    display: none;
+    z-index: 9999; }
     .nav__list li {
       padding: 1rem; }
     .nav__list a:hover {
@@ -499,7 +503,8 @@ html {
     margin-top: 0.5rem; } }
 
 .about {
-  background: #FFF; }
+  background: #FFF;
+  padding: 1px; }
   .about__article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -638,7 +643,8 @@ html {
     padding-bottom: 2rem; } }
 
 .speakers {
-  background: #FFF; }
+  background: #FFF;
+  padding: 1px; }
   .speakers__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -871,8 +877,8 @@ html {
         margin: 1.5rem auto 1.5rem auto;
         justify-self: center; }
     .pricing__container__price:hover {
-      -webkit-box-shadow: 0px 0px 10px #e85889;
-      box-shadow: 0px 0px 10px #e85889; }
+      -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+      box-shadow: 0px 0px 10px #e0e0e0; }
     .pricing__container .optimal {
       position: relative;
       overflow: hidden; }
@@ -919,7 +925,9 @@ html {
     .pricing__container .optimal .pricing__container__price--price {
       color: #e85889; }
     .pricing__container .optimal .price-num {
-      color: #e85889; } }
+      color: #e85889; }
+    .pricing__container .optimal .banner {
+      display: none; } }
 
 @media (max-width: 640px) {
   .pricing {
@@ -1066,9 +1074,9 @@ html {
           line-height: 2.4rem;
           margin: 0.3rem 0; }
     .event .event__container .event__speaker__topic:hover img {
-      border: 1rem solid #FFF;
-      -webkit-box-shadow: 0 0 2rem #777777;
-      box-shadow: 0 0 2rem #777777;
+      border: 0.5rem solid #FFF;
+      -webkit-box-shadow: 0 0 1rem #fafafa;
+      box-shadow: 0 0 1rem #fafafa;
       -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
       transform: scale(1.2); }
@@ -1167,7 +1175,9 @@ html {
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
     .quote .quote__pictures img:hover {
-      border: 10px solid #FFF; }
+      border: 0.5rem solid #FFF;
+      -webkit-box-shadow: 0 0 1rem #fafafa;
+      box-shadow: 0 0 1rem #fafafa; }
   .quote .quote__pictures:first-child {
     margin-top: -5px; }
   .quote .quote__text--smart {
@@ -1289,12 +1299,20 @@ html {
 
 .news__container {
   min-height: 301px;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   .news__container .text {
     padding: 5.5rem 3rem;
     vertical-align: middle; }
   .news__container img {
     max-width: 100%; }
+
+.news__container:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03); }
 
 .news__container--1 {
   grid-column: 1/3;
@@ -1552,8 +1570,12 @@ footer {
       padding: 0.5rem; } }
 
 @media (max-width: 900px) {
-  footer .contact__container .icon {
-    margin: 0 0.5rem; }
+  footer {
+    padding: 1px; }
+    footer .contact__container {
+      margin-top: 1rem; }
+      footer .contact__container .icon {
+        margin: 1rem 1rem 0 0; }
   .footer-menu ul {
     width: 100%; } }
 

@@ -80,6 +80,10 @@ html {
     background: $primary;
 }
 
+a:focus{
+    border: 1px solid $secondary;
+}
+
 //overall wrapper media query
 @media (max-width: 1500px) {
     .wrapper{

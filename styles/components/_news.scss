@@ -39,6 +39,7 @@
 .news__container{
     min-height: 301px;
     background-color: $offWhite;
+    transition: all 0.3s ease;
     .text{
         padding: 5.5rem 3rem;
         vertical-align: middle;
@@ -46,6 +47,10 @@
     img{
         max-width: 100%;
     }
+}
+
+.news__container:hover{
+    transform: scale(1.03);
 }
 .news__container--1{
     grid-column: 1/3;
