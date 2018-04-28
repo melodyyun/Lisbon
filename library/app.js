@@ -98,10 +98,14 @@ app.countDown = () => {
 
 //function ready
 $(document).ready(function () {
+    //smooth scroll
+    const scroll = new SmoothScroll('a');
+    // $('a').smoothScroll();
 
     app.checkScreenSize();
     app.toggleNav();
 
     //countdown timer
     setInterval(app.countDown,1000);
+
 });
