@@ -7,7 +7,6 @@ app.toggleNav = () => {
         } else {
             // $(this).next().hide();
             $(this).next().fadeOut();
-            
         };
     });
 }
